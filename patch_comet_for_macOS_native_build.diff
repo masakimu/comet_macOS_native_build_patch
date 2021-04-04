@@ -1,0 +1,19 @@
+*** CometSearch/Common.h~	2020-04-06 11:23:28.000000000 +0900
+--- CometSearch/Common.h	2020-11-03 17:10:22.000000000 +0900
+***************
+*** 21,26 ****
+--- 21,34 ----
+  #include <string>
+  #include <ctime>
+  
++ 
++ #if defined(__APPLE__)
++ #include <stddef.h>
++ #define off64_t off_t
++ #define fseeko64 fseeko
++ #define ftello64 ftello
++ #endif
++ 
+  #ifdef _WIN32
+  //socket
+  #ifndef WIN32_LEAN_AND_MEAN
