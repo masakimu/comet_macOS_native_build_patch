@@ -1,4 +1,4 @@
-# A small patch to build macOS native binary of comet
+# A  patch to build macOS native binary of comet
 This patch is provided to build comet search engine on macOS. Comet is peptide search engine for mass spectrometry.
 
 Target version of the comet to build:  2019015.
